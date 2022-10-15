@@ -1,0 +1,15 @@
+{
+  "name": "formularios",
+  "version": "1.0.0",
+  "description": "Trabalhando com Formulários",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Vitor Silva",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.29.4",
+    "package": "^1.0.1"
+  }
+}
