@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/calc.css">
   <title>Formulários</title>
   <script src="https://kit.fontawesome.com/c9af830ec2.js" crossorigin="anonymous" defer></script>
   <script src="/JavaScript/Calculadora.js" defer></script>
@@ -16,33 +16,43 @@
     <button id="lightbtn"><i class="fa fa-sun-o" aria-hidden="true"></i></button>
     <button id="darkbtn"><i class="fa fa-moon-o" aria-hidden="true"></i></button>
   </div>
-  <h1>DESAFIO CADASTRO DEVs</h1>
+  <h1>Calculadora</h1>
   <div class="content-box">
-    <ul>
-        <li><a href="/">vOLTAR PARA A TELA INCIAL</a></li>
-    </ul>
+    <div class="voltar">
+        <a href="/">VOLTAR PARA A TELA INCIAL</a>
+    </div>
   </div>
-  <hr>
 
-  <form id="formularios">
-
-    <h2>PRENCHA OS CAMPOS PARA A VAGA DE DESENVOLVEDOR</h2><br>
-
-    <label for="nomeCompleto">NOME COMPLETO</label><br>
-    <input name="nomeCompleto" id="nomeCompleto" type="text"><br><br>
-    
-    
-    <div id="addTecno"></div><br>
-    <button type="button" id="addAcao">ADICIONAR TECNOLOGIA</button>
-    <br><br>
-    
-    <button type="submit">CADASTRAR</button>
-
-
-  </form>
-
-  
-
+  <main data-theme="dark">
+    <header class="flex align-center justify-between"></header>
+    <input type="text" id="input">
+    <div id="keys">
+      <button id="clear">C</button>
+      <button class="charKey" data-value=" ( ">(</button>
+      <button class="charKey" data-value=" ) ">)</button>
+      <button class="charKey" data-value=" / ">/</button>
+      <button class="charKey" data-value="7">7</button>
+      <button class="charKey" data-value="8">8</button>
+      <button class="charKey" data-value="9">9</button>
+      <button class="charKey" data-value=" * ">*</button>
+      <button class="charKey" data-value="4">4</button>
+      <button class="charKey" data-value="5">5</button>
+      <button class="charKey" data-value="6">6</button>
+      <button class="charKey" data-value=" - ">-</button>
+      <button class="charKey" data-value="1">1</button>
+      <button class="charKey" data-value="2">2</button>
+      <button class="charKey" data-value="3">3</button>
+      <button class="charKey" data-value=" + ">+</button>
+      <button class="charKey" data-value="0">0</button>
+      <button class="charKey" data-value=".">.</button>
+      <button class="charKey" data-value=" % ">mod</button>
+      <button id="equal">=</button>
+    </div>
+    <section class="flex align-center justify-between">
+      <button id="copyToClipboard">Copy</button>
+      <input type="text" id="result" disabled>
+    </section>
+</main>
 
 
   
